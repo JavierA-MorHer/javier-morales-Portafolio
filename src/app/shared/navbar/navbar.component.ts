@@ -16,7 +16,7 @@ export class NavbarComponent {
 
   constructor() { }
 
-  isActive : boolean = true;
+  isActive : boolean = false;
 
 
   toogleMenu(){
