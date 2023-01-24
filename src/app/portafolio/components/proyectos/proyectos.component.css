@@ -36,7 +36,7 @@
 
 .img-pr{
     border-radius: 10px;
-    width:600px;
+    width: 100%;
     transition: all .2s ease-in-out;
 }
 
@@ -64,3 +64,26 @@
     width: 40px;
 }
 
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    .card{
+        display: block;
+        text-align: center;
+    }
+
+    .info{
+        margin: 0;
+    }
+    .info p{
+        margin-top: 20px;
+    }
+    .img-pr{
+        width: 250px;
+    }
+
+    .repo{
+        margin-top: 50px;
+    }
+
+}

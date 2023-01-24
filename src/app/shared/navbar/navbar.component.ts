@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 
 interface MenuItem{
@@ -15,6 +15,13 @@ interface MenuItem{
 export class NavbarComponent {
 
   constructor() { }
+
+  isActive : boolean = true;
+
+
+  toogleMenu(){
+    this.isActive = !this.isActive;
+  }
 
   menuItem:MenuItem[]=[
     {

@@ -40,7 +40,6 @@
 }
 
 .info{
-    width: 950px;
     margin: 10px;
     font-size: 17px;
 }
@@ -71,10 +70,12 @@
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+    
 }
 
 .wrap{
     flex-wrap: wrap;
+   text-align: center;
 }
 
 .highlight{
@@ -83,7 +84,6 @@
 
 .cv{
     width: 300px;
-    margin-top: 100px;
     filter: blur(1.5px);
     margin-bottom: 10px;
     border-radius: 5px;
@@ -92,4 +92,42 @@
 .column{
     display: flex;
     flex-direction: column;
+    margin: 20px;
+
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    .info{
+        display: flex; 
+        flex-direction: column-reverse;
+        width: 95%;
+    }
+
+    .img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img a{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .arco,.cv{
+        width: 75%;
+        margin: 15px;
+    }
+
+    .tituloCertificados{
+        margin-top: 30px;
+    }
+
+    .div-arco{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
 }
