@@ -12,5 +12,6 @@ body{
 
 .container{
     height: auto;
-    min-width: 435px;
+    
+    background-color: red;
 }
