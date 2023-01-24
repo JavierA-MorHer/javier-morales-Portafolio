@@ -1,0 +1,17 @@
+<div class="navbar">
+        <div class="logo">
+            <a class="logo"
+                routerLink='/'
+            >JM</a>
+        </div>
+
+        <!-- Navegacion -->
+        <div class="nav">
+            <a  *ngFor="let item of menuItem"
+                class="link"
+                [routerLink]="item.ruta" 
+                routerLinkActive="active"  
+               >{{ item.texto }}</a>
+        </div>
+    
+</div>

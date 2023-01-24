@@ -1,0 +1,88 @@
+
+<div class="container">
+    
+    
+    <div class="biografia animate__animated animate__fadeIn">
+        <h2 class="titulo">Conoceme</h2>
+
+        <div class="info">
+
+            <div class="img">
+                <div>
+                    <img class="arco" src="../../../../assets/arco.jpg" alt="arco">
+                    <span>Arco de la Calzada, León, Guanajuato</span>
+                </div>
+
+                <div class="column">
+                    <img src="../../../../assets/cv.png" class="cv" alt="cv">
+                    <a href="../../../../assets/CV Javier.pdf" target="_blank"
+                       download="cvJavier.pdf">Haz click aqui para descargar mi CV</a>
+                </div>
+            </div>
+
+
+            <div class="text">
+                <p>
+                    Soy <span class="nombre">Javier Alejandro Morales Hernández </span>, un chico de 22 años de edad,
+                    nacido en León, Guanajuato, <span class="me">Mé</span>xi<span class="co">co</span> .
+                    <br>
+                    <br>
+                    Actualmente estudio la Ingenieria en Sistemas Computacionales,
+                    en el Instituto Tecnológico de León.
+                    <br>
+                    Desde el año 2021 me dediqué a complementar mi formación universitaria y
+                    comence a tomar cursos sobre programación web, aprendiendo HTML, CSS, y Javascript.
+                    <br>
+                    <br>
+                    Cuando tuve las bases decidí tomar un curso ahora sobre React, la famosa librería de Javascript,
+                    y me di cuenta que el frontend me llamaba mucho la atención, el consumo de servicios, el diseño de interfaces
+                    y de la experiencia de usuario, asi que tome otro curso en UX/UI para complementar todo lo que habia aprendido.
+                    <br><br>
+                    Hace poco, descubrí Angular, este framework de Google que me encantó (y con el que esta hecho este portafolio) y
+                    decidí aprenderlo y aunque no me considero experto en ninguna de las tecnologías que he aprendido,
+                    ya no es extraño para mi ver, manipuar e interpretar el código.
+                </p>
+    
+                <h2 class="autoAprendizaje">Autoaprendizaje</h2>
+                <p>Para mi el autoaprendizaje es una caracteristica <span class="highlight"> muy importante. </span>
+                    <br>
+                    <br>
+                    Debido a que en la universidad no tocan las tecnologias anteriormente mencionadas (ni muchas otras)
+                    decidi que si queria poder aprender algo mas que me ayudara con mi formacion, el autoaprendizaje 
+                    seria la clave.<br><br>
+                    Y la verdad que no es facil ya que no tienes a nadie que te este acompañando fisicamente, 
+                    o cumpliendo un horario de clase como
+                    sucede en la universidad, si tienes un error tienes que investigarlo por tu cuenta, 
+                    leyendo mucho tiempo la documentacion,
+                    foros y videos de Youtube hasta dar con la solucion.
+                </p>
+
+                <h2 class="autoAprendizaje">Actualmente</h2>
+                <p>Mi meta es perfeccionar mi manejo de estas tecnologias y ademas, profundizar en el tema backend,
+                    ya que es un tema que me ha llamando mucho la atencion, todo esto que tiene que ver con hacer apis, conectar con bases
+                    de datos, validacion de la informacion, servidores, entre otros.
+                    <br>
+                    <br>
+                    Y de igual manera estoy sumamente abierto a seguir aprendiendo de manera autonoma.<br><br>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="certificados">
+            <h2 class="tituloCertificados">Mis certificados</h2>
+
+            <p>En este apartado podran encontrar los certificados que me han entregado
+                por realizar los cursos mencionados antes en donde se iran sumando más, estoy seguro.
+            </p>
+
+            <div class="wrap">
+                <img class="img-certificados" *ngFor="let item of certificados" [src]="item.path" [alt]="item.nombre">
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>

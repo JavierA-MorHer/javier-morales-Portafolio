@@ -1,0 +1,66 @@
+
+.titulo{
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+
+.proyectos{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.card{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 75%;
+
+    /* Generado con https://hype4.academy/tools/glassmorphism-generator */
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+
+.img-pr{
+    border-radius: 10px;
+    width:600px;
+    transition: all .2s ease-in-out;
+}
+
+.img-pr:hover{
+    transition: all .2s ease-in-out;
+    box-shadow: 0px 0px 40px;
+}
+
+.info{
+    height: 100%;
+    margin: 10px;
+    width: 100%;
+}
+
+.info p{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.repo{
+    margin-top: 100px;
+}
+
+.img-git{
+    width: 40px;
+}
+

@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    color: white;
+}
+
+body{
+    background-image: radial-gradient(circle at 50% -19.91%, #43494f 0, #283a49 25%, #002b43 50%, #001d3d 75%, #000d36 100%);
+}
+
+.container{
+    height: auto;
+}

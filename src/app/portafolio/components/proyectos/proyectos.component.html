@@ -1,0 +1,38 @@
+<div class="container container animate__animated animate__fadeIn">
+
+    <div class="titulo">
+        <h2 >
+          En esta seccion, podras encontrar algunos proyectos que he realizado
+        </h2>
+        <small>Haz click en la imagen para ir a la aplicacion</small>
+    </div>
+
+
+  <div class="proyectos">
+
+    <div class="card" *ngFor="let item of proyectos">
+        <a [href]="item.link" target="_blank">
+            <img class="img-pr" [src]="item.path" [alt]="item.alt">
+        </a>
+
+        <div class="info">
+            <p>{{item.descripcion}}</p>
+
+            <div class="repo">
+                <p>Repositorio</p> 
+                <a [href]="item.repositorio" class="link-repo" target="_blank"> 
+                    <img class="img-git" src="../../../../assets/github.png" alt="Github">
+                </a>
+
+            </div>
+            
+        </div>
+      
+
+    </div>
+
+
+  </div>
+
+
+</div>

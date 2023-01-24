@@ -1,0 +1,13 @@
+.info{
+    text-align: center;
+    margin-top: 100px;
+    height: 90vh;
+}
+
+.el{
+    margin-top: 40px;
+}
+
+.el span{
+    font-size: 18px;
+}

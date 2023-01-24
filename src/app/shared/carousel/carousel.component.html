@@ -1,0 +1,77 @@
+<div class="wrap">
+
+    <div class="principal">
+        <h2>Frontend</h2>
+
+        <div class="tecnologias">
+            
+            <div class="img-container" *ngFor="let item of frontend">
+                <img [src]="item.path" [alt]="item.text">
+                <span>{{item.text}}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="principal">
+        <h2>Backend</h2>
+
+        <div class="tecnologias">
+            
+            <div class="img-container" *ngFor="let item of backend">
+                <img [src]="item.path" [alt]="item.text">
+                <span>{{item.text}}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="principal">
+        <h2>Fullstack</h2>
+
+        <div class="tecnologias">
+            
+            <div class="img-container" *ngFor="let item of fullstack">
+                <img [src]="item.path" [alt]="item.text">
+                <span>{{item.text}}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="principal">
+        <h2>Base de datos</h2>
+
+        <div class="tecnologias">
+            
+            <div class="img-container" *ngFor="let item of database">
+                <img [src]="item.path" [alt]="item.text">
+                <span>{{item.text}}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="principal">
+        <h2>Herramientas</h2>
+
+        <div class="tecnologias">
+            
+            <div class="img-container" *ngFor="let item of herramientas">
+                <img [src]="item.path" [alt]="item.text">
+                <span>{{item.text}}</span>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    
