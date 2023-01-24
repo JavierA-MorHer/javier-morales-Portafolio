@@ -19,7 +19,7 @@
     
             <!-- Navegacion -->
             <div class="nav">
-                <div class="links animate__animated" [ngClass]="{'visible animate__fadeInDown':isActive}">
+                <div class="links" [ngClass]="{'visible ':isActive}">
                     <a  *ngFor="let item of menuItem"
                         class="link"
                         [routerLink]="item.ruta" 

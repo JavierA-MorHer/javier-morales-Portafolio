@@ -17,6 +17,10 @@
     margin-right: 20px;
 }
 
+.links{
+    display: flex;
+}
+
 .link{
     text-decoration: none;
     margin: 20px;
@@ -55,10 +59,11 @@
 @media only screen and (max-width: 768px) {
 
     .navbar{
-        height: fit-content;
+        height: auto;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        display: flex;
 
 
     }
@@ -71,26 +76,34 @@
     }
 
     .link{
-        margin: 15px;
+        margin-bottom: 10px;
     }
 
-    .links{
-        width: 100%;
-        text-align: center;
-        flex-direction: column;
-
-    }
 
     .btn{
         display: flex;
     }
 
+    .nav{
+        margin: 0;
+        display: flex;
+    }
+
     .links{
-        display: none;
+        height: 0px;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+        width: 100%;
+        pointer-events: none;
+        transition:  all .5s ease;
+        margin-bottom: 15px;
     }
     
     .visible{
-        display: flex;
+        height: 25vh;
+        pointer-events: auto;
     }
 
 
