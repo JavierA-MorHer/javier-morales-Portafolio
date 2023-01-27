@@ -25,15 +25,15 @@ export class NavbarComponent {
 
   menuItem:MenuItem[]=[
     {
-      texto:'Sobre mi',
+      texto:'About me',
       ruta:'/about'
     },
     {
-      texto:'Proyectos',
+      texto:'Projects',
       ruta:'/projects'
     },
     {
-      texto:'Contacto',
+      texto:'Contact',
       ruta:'/contact'
     },
   ]
