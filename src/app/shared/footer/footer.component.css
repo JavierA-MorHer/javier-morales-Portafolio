@@ -20,3 +20,7 @@
     height: 50px;
 }
 
+.github{
+    filter: invert(100%);
+}
+
