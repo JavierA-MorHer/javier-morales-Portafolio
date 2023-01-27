@@ -1,0 +1,28 @@
+.to-top {
+    bottom: 0;
+    cursor: pointer;
+    margin: 0 8px 12px 0;
+    position: fixed;
+    right: 0;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+    flex-wrap: wrap;
+  }
+
+  .material-symbols-outlined{
+    width: 100%;
+  }
+
+.show-scrollTop {
+    opacity: 1;
+    transition: all .2s ease-in-out;
+  }
+
+.btn-toTop{
+  background-color: rgba(0, 0, 0, .5);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid white;
+}

@@ -4,6 +4,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { CarouselComponent } from './carousel/carousel.component';
+import { ToTopComponent } from './to-top/to-top.component';
 
 
 
@@ -11,7 +12,8 @@ import { CarouselComponent } from './carousel/carousel.component';
   declarations: [
     NavbarComponent,
     FooterComponent,
-    CarouselComponent
+    CarouselComponent,
+    ToTopComponent
   ],
   imports: [
     CommonModule,
@@ -21,7 +23,8 @@ import { CarouselComponent } from './carousel/carousel.component';
   exports:[
     NavbarComponent,
     FooterComponent,
-    CarouselComponent
+    CarouselComponent,
+    ToTopComponent
   ]
 })
 export class SharedModule { }

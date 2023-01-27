@@ -1,4 +1,6 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+import { filter} from 'rxjs';
 
 
 interface MenuItem{
@@ -12,12 +14,23 @@ interface MenuItem{
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent {
-
-  constructor() { }
+export class NavbarComponent implements OnInit {
 
   isActive : boolean = false;
+  
+  constructor( private router:Router ) { }
 
+  ngOnInit(): void {
+    //If route changes, set isActive in false to close menu
+    this.router.events
+      .pipe(
+        filter( e => e instanceof NavigationEnd )
+      ).subscribe( e => {
+            if( e ){
+              this.isActive = false;
+            }
+      });
+  }
 
   toogleMenu(){
     this.isActive = !this.isActive;
