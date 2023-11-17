@@ -6,7 +6,7 @@ import subprocess
 
 # Token de acceso personal de GitHub
 # Necesitas generar un token en: https://github.com/settings/tokens
-ACCESS_TOKEN = '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'
+ACCESS_TOKEN = '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'
 
 # Nombre de usuario y nombre del repositorio
 USER = 'JavierA-MorHer'
